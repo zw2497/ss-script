@@ -4,6 +4,8 @@ tar -C /usr/local -xzf go1.13.6.linux-amd64.tar.gz
 sed -i '$a export PATH=$PATH:/usr/local/go/bin' $HOME/.profile
 source $HOME/.profile
 
+go get -u -v github.com/shadowsocks/go-shadowsocks2
+
 cd ~
 git clone https://github.com/shadowsocks/v2ray-plugin.git
 cd v2ray-plugin
